@@ -1,0 +1,63 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "build",
+    "module": "ESNext",
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "target": "ESNext",
+    "lib": [
+      "es2015",
+      "dom",
+      "dom.iterable",
+      "es2016.array.include",
+      "es2017.object",
+      "ES5",
+      "ES6",
+      "ES7",
+      "ESNext"
+    ],
+    "alwaysStrict": false,
+    "allowUnreachableCode": false,
+    "skipLibCheck": false,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "sourceMap": true,
+    "allowJs": true,
+    "moduleResolution": "node",
+    "rootDir": "src",
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": false,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "noFallthroughCasesInSwitch": true,
+    "strictNullChecks": true,
+    "importHelpers": true
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/types"
+  ],
+  "types": [
+    "typePatches"
+  ],
+  "typeRoots": [
+    "src/types",
+    "node_modules/@types"
+  ]
+}

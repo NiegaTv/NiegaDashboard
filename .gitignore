@@ -35,11 +35,13 @@ bower_components
 .lock-wscript
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
-build/Release
+build
 
 # Dependency directories
 node_modules/
 jspm_packages/
+/.pnp
+.pnp.js
 
 # TypeScript v1 declaration files
 typings/
@@ -69,7 +71,7 @@ typings/
 .yarn-integrity
 
 # dotenv environment variables file
-.env
+*.env
 .env.test
 
 # parcel-bundler cache (https://parceljs.org/)
@@ -102,3 +104,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Misc
+.DS_Store

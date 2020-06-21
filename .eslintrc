@@ -1,0 +1,75 @@
+{
+  "ignorePatterns": ["node_modules/"],
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true
+      }
+    },
+    "propWrapperFunctions": ["forbidExtraProps"],
+    "react": {
+      "version": "detect"
+    }
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "react/jsx-one-expression-per-line": "off",
+    "react/prefer-stateless-function": "off",
+    "react/jsx-key": "error",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "no-case-declarations": "error",
+    "consistent-return": "off",
+    "object-curly-spacing": ["error", "always"],
+    "quotes": ["error", "single"],
+    "semi": "error",
+    "no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
+    "key-spacing": [
+      "error",
+      {
+        "align": { "on": "colon", "beforeColon": false, "afterColon": true },
+        "multiLine": { "beforeColon": false, "afterColon": true },
+        "singleLine": { "beforeColon": false, "afterColon": true }
+      }
+    ],
+    "indent": [
+      "error",
+      2,
+      {
+        "VariableDeclarator": {
+          "var": 2,
+          "let": 2,
+          "const": 3
+        }
+      }
+    ]
+  },
+  "plugins": [
+    "ramda",
+    "babel",
+    "jest",
+    "react",
+    "prettier",
+    "@typescript-eslint"
+  ],
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "jasmine": true,
+    "jest": true
+  },
+  "extends": [
+    "airbnb-typescript",
+    "react-app",
+    "prettier",
+    "eslint:recommended",
+    "plugin:ramda/recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint", // Uses eslint-config-prettier to disable ESLint rules from @typescript-eslint/eslint-plugin that would conflict with prettier
+    "plugin:prettier/recommended"
+  ]
+}

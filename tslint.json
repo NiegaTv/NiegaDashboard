@@ -1,0 +1,12 @@
+{
+	"extends": [],
+	"defaultSeverity": "warning",
+	"linterOptions": {
+		"exclude": ["config/**/*.js", "node_modules/**/*.ts"]
+	},
+  "rules": {
+    "no-duplicate-imports"    : true,
+    "return-undefined"        : false,
+    "no-submodule-imports": false
+  }
+}
