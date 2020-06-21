@@ -6,7 +6,7 @@ class App extends Component {
   render() {
     const path = 'src/App.tsx';
     const message = ' and save to reload OR NOT.';
-
+    const desc = 'Learn React';
     return (
       <div className='App'>
         <header className='App-header'>
@@ -21,7 +21,7 @@ class App extends Component {
             target='_blank'
             rel='noopener noreferrer'
           >
-            Learn React
+            {desc}
           </a>
         </header>
       </div>
