@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import logo from './logo.svg';
 
 class App extends Component {
   render() {
+    const path = 'src/App.tsx';
+    const message = ' and save to reload OR NOT.';
+
     return (
       <div className='App'>
         <header className='App-header'>
           <img src={logo} className='App-logo' alt='logo' />
           <p>
-            Edit <code>src/App.tsx</code> and save to reload OR NOT.
+            Edit <code>{path}</code>
+            {message}
           </p>
           <a
             className='App-link'
